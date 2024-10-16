@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Letter to Amu</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: 'Georgia', serif;
@@ -17,7 +16,7 @@
             align-items: center;
             height: 100vh;
             flex-direction: column;
-            overflow: hidden; /* Prevent scrollbar from appearing */
+            overflow: hidden; /* Prevent scrollbar from appearing on the body */
         }
 
         .letter-container {
@@ -26,10 +25,12 @@
             background-color: rgba(255, 255, 255, 0.9); /* Soft white */
             border-radius: 10px;
             box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
-            padding: 40px;
+            padding: 20px;
             max-width: 500px;
             border: 2px dashed #d5006d; /* Romantic dashed border */
             margin-top: 20px;
+            max-height: 400px; /* Set a max height for scrollable area */
+            overflow-y: auto; /* Enable vertical scrolling */
         }
 
         .letter-button {
@@ -80,7 +81,13 @@
         <p>- Amar 💔</p>
     </div>
 
-    
+    <div class="emoji-container" id="emojiContainer">
+        <span class="emoji">❤️</span>
+        <span class="emoji">😍</span>
+        <span class="emoji">😘</span>
+        <span class="emoji">💕</span>
+        <span class="emoji">✨</span>
+    </div>
 
     <script>
         function toggleLetter() {
