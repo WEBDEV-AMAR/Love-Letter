@@ -1,0 +1,33 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #fce4ec; /* Soft pink background */
+    color: #5d3c3c; /* Darker text color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.letter-container {
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.9); /* Soft white */
+    border-radius: 10px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    max-width: 500px;
+    border: 2px dashed #d5006d; /* Romantic dashed border */
+}
+
+h1 {
+    color: #d5006d; /* Romantic pink */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1.1em;
+    margin: 10px 0;
+}
